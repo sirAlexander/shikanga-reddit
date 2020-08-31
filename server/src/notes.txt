@@ -1,0 +1,17 @@
+== Development Flow ===
+yarn watch >>>> yarn dev >>>> docker container start ec7ef51b74a3
+
+== Install TS Node ===
+yarn add -D ts-node
+
+== Docker command used ===
+docker run -d --name shikanga_reddit -v shikanga_reddit_dbdata:/var/lib/postgresql/data -p 54320:5432 postgres:latest
+
+
+== Migrations Command ===
+npx mikro-orm migration:create
+
+
+
+== Progress ==
+48.01
